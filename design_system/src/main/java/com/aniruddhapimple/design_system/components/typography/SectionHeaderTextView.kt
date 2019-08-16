@@ -14,7 +14,7 @@ class SectionHeaderTextView @JvmOverloads constructor(context: Context, attrs: A
     init {
         val horizontalSpacing = context.getThemeSpacing(R.attr.spacingDefault)
         val verticalSpacing = context.getThemeSpacing(R.attr.spacingDefault)
-        setPadding(horizontalSpacing, verticalSpacing, horizontalSpacing, 0)
+        setPadding(horizontalSpacing, verticalSpacing, horizontalSpacing, verticalSpacing)
         setTextColor(context.getThemeColor(R.attr.colorTypographyDefault))
     }
 }

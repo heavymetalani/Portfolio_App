@@ -7,7 +7,7 @@
     <ScrollView android:layout_width="match_parent" android:layout_height="match_parent">
         <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical">
 
-        <com.aniruddhapimple.design_system.components.typography.PageHeaderTextView
+               <com.aniruddhapimple.design_system.components.typography.PageHeaderTextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Hi, I am Aniruddha"
@@ -22,12 +22,97 @@
                     android:layout_marginBottom="@dimen/spacing_loosest"
             />
 
-        <com.aniruddhapimple.design_system.components.cards.HomeCardView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:title="Design System"
-                app:description="This cardview is a custom cardview built for resusability along with other custom views you'll notice throughout the application."
-        />
+            <com.aniruddhapimple.design_system.components.containers.ElevatedCardContainer
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <RelativeLayout android:layout_width="match_parent"
+                                        android:layout_height="wrap_content">
+                            <com.aniruddhapimple.design_system.components.typography.SectionHeaderTextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Work Experience"
+                            android:id="@+id/link_table_we_textview"/>
+                            <ImageView
+                                    android:id="@+id/link_table_we_imageview"
+                                    android:layout_width="50dp"
+                                    android:layout_height="50dp"
+                                    android:layout_centerInParent="true"
+                                    android:layout_alignParentRight="true"
+                                    android:src="@drawable/ic_chevron_right_black_24dp"
+                                    android:gravity="right|end"/>
+                        </RelativeLayout>
+
+                        <View android:layout_width="match_parent" android:layout_height="1dp" android:background="@color/gray_50" android:layout_marginHorizontal="@dimen/spacing_tight"/>
+                    <RelativeLayout android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+                        <com.aniruddhapimple.design_system.components.typography.SectionHeaderTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Projects"
+                                android:id="@+id/link_table_projects_textview"/>
+                        <ImageView
+                                android:id="@+id/link_table_projects_imageview"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_centerInParent="true"
+                                android:layout_alignParentRight="true"
+                                android:src="@drawable/ic_chevron_right_black_24dp"
+                                android:gravity="right|end"/>
+                    </RelativeLayout>
+
+                    <View android:layout_width="match_parent" android:layout_height="1dp" android:background="@color/gray_50" android:layout_marginHorizontal="@dimen/spacing_tight"/>
+
+                    <RelativeLayout android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+                        <com.aniruddhapimple.design_system.components.typography.SectionHeaderTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Skills"
+                                android:id="@+id/link_table_skills_textview"/>
+                        <ImageView
+                                android:id="@+id/link_table_skills_imageview"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_centerInParent="true"
+                                android:layout_alignParentRight="true"
+                                android:src="@drawable/ic_chevron_right_black_24dp"
+                                android:gravity="right|end"/>
+                    </RelativeLayout>
+
+                    <View android:layout_width="match_parent" android:layout_height="1dp" android:background="@color/gray_50" android:layout_marginHorizontal="@dimen/spacing_tight"/>
+
+                    <RelativeLayout android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+                        <com.aniruddhapimple.design_system.components.typography.SectionHeaderTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Activities"
+                                android:id="@+id/link_table_activities_textview"/>
+                        <ImageView
+                                android:id="@+id/link_table_activities_imageview"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_centerInParent="true"
+                                android:layout_alignParentRight="true"
+                                android:src="@drawable/ic_chevron_right_black_24dp"
+                                android:gravity="right|end"/>
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+
+            </com.aniruddhapimple.design_system.components.containers.ElevatedCardContainer>
+
+            <com.aniruddhapimple.design_system.components.cards.HomeCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:title="Design System"
+                    app:description="This cardview is a custom cardview built for resusability along with other custom views you'll notice throughout the application."
+            />
         <com.aniruddhapimple.design_system.components.cards.HomeCardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
