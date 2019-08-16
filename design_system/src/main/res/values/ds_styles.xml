@@ -1,0 +1,59 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="Ds"/>
+
+    <style name="Ds.BaseAppTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowBackground">@color/gray_50</item>
+
+        <item name="colorBackgroundDefault">@color/gray_100</item>
+        <item name="colorBackgroundScreen">@color/gray_100</item>
+        <item name="colorBackgroundAlternate">@color/blue_70</item>
+        <item name="colorTypographyDefault">@color/gray_0</item>
+        <item name="colorTypographyDefaultInverted">@color/gray_100</item>
+        <item name="colorTypographyLight">@color/gray_50</item>
+        <item name="colorTypographyError">@color/red_70</item>
+        <item name="colorTypographyInteractiveDefault">@color/purple_65</item>
+
+        <item name="spacingNone">@dimen/spacing_none</item>
+        <item name="spacingTightest">@dimen/spacing_tightest</item>
+        <item name="spacingTighter">@dimen/spacing_tighter</item>
+        <item name="spacingTight">@dimen/spacing_tight</item>
+        <item name="spacingDefault">@dimen/spacing_default</item>
+        <item name="spacingLoose">@dimen/spacing_loose</item>
+        <item name="spacingLooser">@dimen/spacing_looser</item>
+        <item name="spacingLoosest">@dimen/spacing_loosest</item>
+
+        <item name="shadowNone">@dimen/shadow_none</item>
+        <item name="shadowLight">@dimen/shadow_light</item>
+        <item name="shadowMedium">@dimen/shadow_medium</item>
+        <item name="shadowHeavy">@dimen/shadow_heavy</item>
+
+        <item name="opacityTransparent">@dimen/opacity_transparent</item>
+        <item name="opacitySemiTransparent">@dimen/opacity_semi_transparent</item>
+        <item name="opacitySemiOpaque">@dimen/opacity_semi_opaque</item>
+        <item name="opacityOpaque">@dimen/opacity_opaque</item>
+
+        <item name="cornerRadiusHard">@dimen/corner_radius_hard</item>
+        <item name="cornerRadiusSoft">@dimen/corner_radius_soft</item>
+        <item name="cornerRadiusSmooth">@dimen/corner_radius_smooth</item>
+
+        <item name="typographyStyleHighlight">@style/Ds.Typography.Highlight</item>
+        <item name="typographyStylePageHeader">@style/Ds.Typography.PageHeader</item>
+        <item name="typographyStyleSectionHeader">@style/Ds.Typography.SectionHeader</item>
+        <item name="typographyStyleBody">@style/Ds.Typography.Body</item>
+        <item name="typographyStyleButton">@style/Ds.Typography.Button</item>
+    </style>
+
+</resources>

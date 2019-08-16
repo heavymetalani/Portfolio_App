@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1065646126479",
+    "firebase_url": "https://aniruddhapimpleportfolio.firebaseio.com",
+    "project_id": "aniruddhapimpleportfolio",
+    "storage_bucket": "aniruddhapimpleportfolio.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1065646126479:android:7ff4ab29562a8548",
+        "android_client_info": {
+          "package_name": "com.example.portfolio"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1065646126479-gtemibuvtd4fe7a1re5giga2v8jg44dr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC2KoeVn9ZV9ThzX0vniw_nH_4eh0q2XPw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1065646126479-gtemibuvtd4fe7a1re5giga2v8jg44dr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

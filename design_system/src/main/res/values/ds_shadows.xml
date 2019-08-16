@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="shadow_none">0dp</dimen>
+    <dimen name="shadow_light">4dp</dimen>
+    <dimen name="shadow_medium">6dp</dimen>
+    <dimen name="shadow_heavy">8dp</dimen>
+</resources>

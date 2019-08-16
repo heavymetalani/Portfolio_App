@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="spacing_none">0dp</dimen>
+    <dimen name="spacing_tightest">4dp</dimen>
+    <dimen name="spacing_tighter">8dp</dimen>
+    <dimen name="spacing_tight">12dp</dimen>
+    <dimen name="spacing_default">16dp</dimen>
+    <dimen name="spacing_loose">24dp</dimen>
+    <dimen name="spacing_looser">32dp</dimen>
+    <dimen name="spacing_loosest">48dp</dimen>
+
+</resources>

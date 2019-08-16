@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="opacity_transparent" format="float">0.0</dimen>
+    <dimen name="opacity_semi_transparent" format="float">0.5</dimen>
+    <dimen name="opacity_semi_opaque" format="float">0.75</dimen>
+    <dimen name="opacity_opaque" format="float">1.0</dimen>
+
+</resources>

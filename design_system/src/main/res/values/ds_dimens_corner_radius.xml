@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="corner_radius_hard">0dp</dimen>
+    <dimen name="corner_radius_soft">4dp</dimen>
+    <dimen name="corner_radius_smooth">8dp</dimen>
+
+</resources>

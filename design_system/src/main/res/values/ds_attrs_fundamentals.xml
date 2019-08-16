@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <attr name="colorBackgroundDefault" format="reference"/>
+    <attr name="colorBackgroundScreen" format="reference"/>
+    <attr name="colorBackgroundAlternate" format="reference"/>
+    <attr name="colorTypographyDefault" format="reference"/>
+    <attr name="colorTypographyDefaultInverted" format="reference"/>
+    <attr name="colorTypographyLight" format="reference"/>
+    <attr name="colorTypographyError" format="reference"/>
+    <attr name="colorTypographyInteractiveDefault" format="reference"/>
+
+    <attr name="spacingNone" format="reference"/>
+    <attr name="spacingTightest" format="reference"/>
+    <attr name="spacingTighter" format="reference"/>
+    <attr name="spacingTight" format="reference"/>
+    <attr name="spacingDefault" format="reference"/>
+    <attr name="spacingLoose" format="reference"/>
+    <attr name="spacingLooser" format="reference"/>
+    <attr name="spacingLoosest" format="reference"/>
+
+    <attr name="shadowNone" format="reference"/>
+    <attr name="shadowLight" format="reference"/>
+    <attr name="shadowMedium" format="reference"/>
+    <attr name="shadowHeavy" format="reference"/>
+
+    <attr name="opacityTransparent" format="reference"/>
+    <attr name="opacitySemiTransparent" format="reference"/>
+    <attr name="opacitySemiOpaque" format="reference"/>
+    <attr name="opacityOpaque" format="reference"/>
+
+    <attr name="cornerRadiusHard" format="reference"/>
+    <attr name="cornerRadiusSoft" format="reference"/>
+    <attr name="cornerRadiusSmooth" format="reference"/>
+
+    <attr name="typographyStyleHighlight" format="reference"/>
+    <attr name="typographyStylePageHeader" format="reference"/>
+    <attr name="typographyStyleSectionHeader" format="reference"/>
+    <attr name="typographyStyleBody" format="reference"/>
+    <attr name="typographyStyleButton" format="reference"/>
+</resources>
