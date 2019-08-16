@@ -14,13 +14,27 @@
                 android:gravity="center"
                 android:layout_marginTop="@dimen/spacing_loosest"
         />
-            <com.aniruddhapimple.design_system.components.typography.BodyTextView
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                      android:layout_marginHorizontal="@dimen/spacing_default"
+                      android:fontFamily="@font/now_regular"
+                      android:textSize="@dimen/ds_font_size_body"
+                      android:textColor="@color/gray_0"
+                      android:text="                 Android Developer"
+                      android:gravity="center"
+                      android:layout_marginBottom="@dimen/spacing_default"/>
+
+            <com.aniruddhapimple.design_system.components.typography.SectionHeaderTextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="                 Android Developer"
-                    android:gravity="center"
-                    android:layout_marginBottom="@dimen/spacing_loosest"
+            android:text="What I do:"
             />
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/spacing_default"
+            android:fontFamily="@font/now_regular"
+            android:textSize="@dimen/ds_font_size_body"
+                      android:textColor="@color/gray_0"
+            android:text="Develop aesthetically pleasing and efficient Android Applications."
+            android:layout_marginBottom="@dimen/spacing_default"/>
 
             <com.aniruddhapimple.design_system.components.containers.ElevatedCardContainer
                     android:layout_width="match_parent"
