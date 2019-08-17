@@ -15,7 +15,7 @@
         <item name="windowActionBar">false</item>
         <item name="android:windowFullscreen">true</item>
         <item name="android:windowContentOverlay">@null</item>
-        <item name="android:windowBackground">@color/gray_75</item>
+        <item name="android:windowBackground">@color/gray_20</item>
 
         <item name="colorBackgroundDefault">@color/gray_100</item>
         <item name="colorBackgroundScreen">@color/gray_100</item>
