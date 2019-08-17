@@ -16,14 +16,14 @@ class WorkProjectActivity : AppCompatActivity() {
         work_ex_recycler_view.adapter = WorkProjectAdapter(retrieveWorkEx())
     }
 
-    private fun retrieveWorkEx(): ArrayList<WorkDataObject> {
-        val temp : WorkDataObject = if(intent.getStringExtra("activity_title") == "Projects")
+    private fun retrieveWorkEx(): ArrayList<ListableItem> {
+        val temp : ListableItem = if(intent.getStringExtra("activity_title") == "Projects")
             WorkDataObject("CTO","Google",
                 "Jun 96 - Aug 19","lavdu lasun\nlasun lavda\n aur kya chahiye\n punnja \n maa ki aankh")
         else
-            WorkDataObject("CEO","Google",
+            ProjectDataObject("CEO","Google",
                 "Jun 96 - Aug 19","lavdu lasun\nlasun lavda\n aur kya chahiye\n punnja \n maa ki aankh")
-        val tempList : ArrayList<WorkDataObject> = ArrayList()
+        val tempList : ArrayList<ListableItem> = ArrayList()
         tempList.add(temp)
         return tempList
     }
