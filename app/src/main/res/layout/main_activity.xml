@@ -60,7 +60,9 @@
                         android:layout_height="match_parent"
                         android:orientation="vertical">
                         <RelativeLayout android:layout_width="match_parent"
-                                        android:layout_height="wrap_content">
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/work_ex_layout"
+                                        android:onClick="onWorkExProjectsClick">
                             <com.aniruddhapimple.design_system.components.typography.SectionHeaderTextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
@@ -69,7 +71,7 @@
                             <ImageView
                                     android:id="@+id/link_table_we_imageview"
                                     android:layout_width="50dp"
-                                    android:layout_height="50dp"
+                                    android:layout_height="40dp"
                                     android:layout_centerInParent="true"
                                     android:layout_alignParentRight="true"
                                     android:src="@drawable/ic_chevron_right_black_24dp"
@@ -78,7 +80,9 @@
 
                         <View android:layout_width="match_parent" android:layout_height="1dp" android:background="@color/gray_50" android:layout_marginHorizontal="@dimen/spacing_tight"/>
                     <RelativeLayout android:layout_width="match_parent"
-                                    android:layout_height="wrap_content">
+                                    android:layout_height="wrap_content"
+                                    android:onClick="onWorkExProjectsClick"
+                    android:id="@+id/project_layout">
                         <com.aniruddhapimple.design_system.components.typography.SectionHeaderTextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
@@ -87,7 +91,7 @@
                         <ImageView
                                 android:id="@+id/link_table_projects_imageview"
                                 android:layout_width="50dp"
-                                android:layout_height="50dp"
+                                android:layout_height="40dp"
                                 android:layout_centerInParent="true"
                                 android:layout_alignParentRight="true"
                                 android:src="@drawable/ic_chevron_right_black_24dp"
@@ -106,7 +110,7 @@
                         <ImageView
                                 android:id="@+id/link_table_skills_imageview"
                                 android:layout_width="50dp"
-                                android:layout_height="50dp"
+                                android:layout_height="40dp"
                                 android:layout_centerInParent="true"
                                 android:layout_alignParentRight="true"
                                 android:src="@drawable/ic_chevron_right_black_24dp"
@@ -125,7 +129,7 @@
                         <ImageView
                                 android:id="@+id/link_table_education_imageview"
                                 android:layout_width="50dp"
-                                android:layout_height="50dp"
+                                android:layout_height="40dp"
                                 android:layout_centerInParent="true"
                                 android:layout_alignParentRight="true"
                                 android:src="@drawable/ic_chevron_right_black_24dp"/>
@@ -143,7 +147,7 @@
                         <ImageView
                                 android:id="@+id/link_table_activities_imageview"
                                 android:layout_width="50dp"
-                                android:layout_height="50dp"
+                                android:layout_height="40dp"
                                 android:layout_centerInParent="true"
                                 android:layout_alignParentRight="true"
                                 android:src="@drawable/ic_chevron_right_black_24dp"
@@ -157,7 +161,7 @@
             <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Features of this app"
+                    android:text="About this app"
                     android:textSize="@dimen/ds_font_size_page_header"
                     android:gravity="center"
                     android:paddingHorizontal="@dimen/spacing_default"
