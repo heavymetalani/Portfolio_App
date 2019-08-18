@@ -20,7 +20,7 @@
                 android:textSize="@dimen/ds_font_size_page_header"
                 android:textColor="@color/gray_0"
                 android:background="@color/gray_100"
-                android:text="Work Experience"/>
+                android:text="Title"/>
     </LinearLayout>
     <androidx.recyclerview.widget.RecyclerView android:layout_width="match_parent"
                                                android:layout_height="match_parent"

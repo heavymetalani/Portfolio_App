@@ -15,7 +15,7 @@ class TertiaryButton @JvmOverloads constructor(context: Context, attrs: Attribut
     init {
         val spacing = context.getThemeSpacing(R.attr.spacingDefault)
         setPadding(spacing, spacing, spacing, spacing)
-        setTextColor(context.getThemeColor(R.attr.colorTypographyInteractiveDefault))
+        setTextColor(context.getThemeColor(R.attr.colorTypographyDefaultInverted))
         isAllCaps = true
     }
 }

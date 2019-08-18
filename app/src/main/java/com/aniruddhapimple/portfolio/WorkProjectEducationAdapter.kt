@@ -19,10 +19,7 @@ class WorkProjectAdapter(private var listableObjectList : ArrayList<ListableItem
         val layoutInflater = LayoutInflater.from(parent.context)
         return WorkProjectViewHolder(layoutInflater.inflate(R.layout.item_work_details, parent, false))
     }
-
-
 }
-
 
 class WorkProjectViewHolder(view : View) : RecyclerView.ViewHolder(view) {
     private val titleTextView: TextView = view.findViewById(R.id.work_position_text_view)
@@ -43,8 +40,11 @@ class WorkProjectViewHolder(view : View) : RecyclerView.ViewHolder(view) {
             dateTextView.text = ListableObject.date
             detailsTextView.text = ListableObject.details
         }
-
+        else if(ListableObject is EducationDataObject){
+            titleTextView.text = ListableObject.university
+            subtitleTextView.text = ListableObject.location
+            dateTextView.text = ListableObject.date
+            detailsTextView.text = ListableObject.otherDetails
+        }
     }
-
 }
-

@@ -20,15 +20,21 @@ class MainActivity : AppCompatActivity()  {
     }
 
     fun onWorkExProjectsClick(view : View){
-        val intent = Intent(this, WorkProjectActivity::class.java)
-        if(view.id == R.id.work_ex_layout){
-            intent.putExtra("activity_title","Work Experience")
+        val intent = Intent(this, WorkProjectEducationActivity::class.java)
+        when {
+            view.id == R.id.work_ex_layout -> intent.putExtra("activity_title","Work Experience")
+            view.id == R.id.project_layout -> intent.putExtra("activity_title","Projects")
+            else -> intent.putExtra("activity_title","Education")
         }
+        startActivity(intent)
+    }
 
-        else if(view.id == R.id.project_layout){
-            intent.putExtra("activity_title","Projects")
-        }
+    fun onWebLinkClick(view : View){
 
+    }
+
+    fun onAboutAppClick(view : View){
+        val intent = Intent(this, AboutAppActivity::class.java)
         startActivity(intent)
     }
 }
