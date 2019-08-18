@@ -5,23 +5,26 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
-    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
-                  android:orientation="horizontal"
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content"
                   android:background="@color/gray_100"
-                  android:padding="@dimen/spacing_tighter">
-        <ImageView android:layout_width="50dp" android:layout_height="50dp"
-                   android:src="@drawable/ic_chevron_left_black_24dp"/>
+                  android:padding="6dp">
+        <ImageView android:layout_width="50dp" android:layout_height="45dp"
+                   android:src="@drawable/ic_chevron_left_black_24dp"
+        android:id="@+id/back_button_wpe_activity"
+        android:layout_centerVertical="true"/>
         <TextView
                 android:id="@+id/work_project_activity_title"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/now_bold"
-                android:paddingTop="@dimen/spacing_tighter"
-                android:textSize="@dimen/ds_font_size_page_header"
+                android:layout_toRightOf="@+id/back_button_wpe_activity"
+                android:fontFamily="@font/now_medium"
+                android:paddingTop="6dp"
+                android:textSize="24sp"
                 android:textColor="@color/gray_0"
                 android:background="@color/gray_100"
-                android:text="Title"/>
-    </LinearLayout>
+                android:text="Title"
+        />
+    </RelativeLayout>
     <androidx.recyclerview.widget.RecyclerView android:layout_width="match_parent"
                                                android:layout_height="match_parent"
     android:id="@+id/work_ex_recycler_view"/>

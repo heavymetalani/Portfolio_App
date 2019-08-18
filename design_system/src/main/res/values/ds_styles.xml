@@ -54,6 +54,8 @@
         <item name="typographyStyleSectionHeader">@style/Ds.Typography.SectionHeader</item>
         <item name="typographyStyleBody">@style/Ds.Typography.Body</item>
         <item name="typographyStyleButton">@style/Ds.Typography.Button</item>
+
+        <item name="android:windowAnimationStyle">@style/CustomAnimation</item>
     </style>
 
 </resources>
