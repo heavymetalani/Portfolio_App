@@ -18,28 +18,28 @@
                     android:id="@+id/work_project_activity_title"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_toRightOf="@+id/back_button_about_activity"
+                    android:layout_toEndOf="@+id/back_button_about_activity"
                     android:fontFamily="@font/now_medium"
                     android:paddingTop="6dp"
                     android:textSize="24sp"
                     android:textColor="@color/gray_0"
                     android:background="@color/gray_100"
-                    android:text="About the App"
+                    android:text="@string/about_the_app"
             />
         </RelativeLayout>
         <com.aniruddhapimple.design_system.components.cards.HomeCardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 app:title="Firebase"
-                app:description="All information you see here is queried from the Google Cloud Firestore"/>
+                app:description="All information you see here is queried from the Google Cloud Firestore."/>
 
         <com.aniruddhapimple.design_system.components.cards.HomeCardView
                 android:id="@+id/notifications_card_view"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 app:title="Notifications"
-                app:description="Using Google Cloud Messaging this app is capable of sending notifications."
-                app:callToAction="Press this to get a notification."
+                app:description="Using Firebase Cloud Messaging this app is capable of sending notifications."
+                app:callToAction="Press this to get a notification"
                 app:buttonType="notification"/>
         <com.aniruddhapimple.design_system.components.cards.HomeCardView
                 android:layout_width="match_parent"
