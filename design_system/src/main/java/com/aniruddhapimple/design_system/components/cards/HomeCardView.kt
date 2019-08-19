@@ -23,12 +23,13 @@ class HomeCardView @JvmOverloads constructor(context: Context, attrs: AttributeS
         val title = typedArray.getString(R.styleable.HomeCardView_title)
         val description = typedArray.getString(R.styleable.HomeCardView_description)
         val callToAction = typedArray.getString(R.styleable.HomeCardView_callToAction)
+        val buttonType = typedArray.getString(R.styleable.HomeCardView_buttonType)
 //        val imageResId = typedArray.getResourceId(R.styleable.HomeCardView_image, 0)
         typedArray.recycle()
-        initialize(title ?: "", description ?: "", callToAction ?: "")
+        initialize(title ?: "", description ?: "", callToAction ?: "", buttonType ?: "")
     }
 
-    private fun initialize(title: String, description: String, callToAction: String) {
+    private fun initialize(title: String, description: String, callToAction: String, buttonType : String) {
         val linearLayout = LinearLayout(context)
         linearLayout.orientation = LinearLayout.VERTICAL
         val layoutParams = ViewGroup.LayoutParams(MATCH_PARENT, WRAP_CONTENT)
@@ -36,7 +37,7 @@ class HomeCardView @JvmOverloads constructor(context: Context, attrs: AttributeS
         linearLayout.addView(createTitleTextView(title))
         linearLayout.addView(createDescriptionTextView(description))
         if(callToAction.isNotEmpty()){
-            linearLayout.addView(createCTATextView(callToAction))
+            linearLayout.addView(createCTATextView(callToAction, buttonType))
         }
         this.addView(linearLayout)
     }
@@ -60,12 +61,18 @@ class HomeCardView @JvmOverloads constructor(context: Context, attrs: AttributeS
     }
 
     @SuppressLint("RtlHardcoded")
-    private fun createCTATextView(callToAction: String): View {
+    private fun createCTATextView(callToAction: String, buttonType: String): View {
         val callToActionTextView = HomeCardButton(context)
         val layoutParamsCTA = ViewGroup.LayoutParams(MATCH_PARENT, WRAP_CONTENT)
         callToActionTextView.layoutParams = layoutParamsCTA
         callToActionTextView.text = callToAction
         callToActionTextView.setBackgroundColor(context.getThemeColor((R.attr.colorBackgroundAlternate)))
+
+        if(buttonType=="notification"){
+            callToActionTextView.id = R.id.notificationButton
+        } else if (buttonType=="animation"){
+            callToActionTextView.id = R.id.animationButton
+        }
         return callToActionTextView
     }
 }

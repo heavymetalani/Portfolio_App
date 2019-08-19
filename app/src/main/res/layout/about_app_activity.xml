@@ -9,7 +9,7 @@
         <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content"
                         android:background="@color/gray_100"
                         android:padding="@dimen/spacing_tightest"
-        android:layout_marginBottom="@dimen/spacing_default">
+                        android:layout_marginBottom="@dimen/spacing_default">
             <ImageView android:layout_width="50dp" android:layout_height="45dp"
                        android:src="@drawable/ic_chevron_left_black_24dp"
                        android:id="@+id/back_button_about_activity"
@@ -30,22 +30,30 @@
         <com.aniruddhapimple.design_system.components.cards.HomeCardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:title="Design System"
-                app:description="This cardview is a custom cardview built for resusability along with other custom views you'll notice throughout the application."
-        />
-        <com.aniruddhapimple.design_system.components.cards.HomeCardView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
                 app:title="Firebase"
                 app:description="All information you see here is queried from the Google Cloud Firestore"/>
 
         <com.aniruddhapimple.design_system.components.cards.HomeCardView
+                android:id="@+id/notifications_card_view"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 app:title="Notifications"
                 app:description="Using Google Cloud Messaging this app is capable of sending notifications."
-                app:callToAction="Press this to get a notification."/>
-
+                app:callToAction="Press this to get a notification."
+                app:buttonType="notification"/>
+        <com.aniruddhapimple.design_system.components.cards.HomeCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:title="Design System"
+                app:description="This cardview is a custom cardview built for resusability along with other custom views you'll notice throughout the application."
+        />
+        <com.aniruddhapimple.design_system.components.cards.HomeCardView android:layout_width="match_parent"
+                                                                         android:layout_height="wrap_content"
+                                                                         app:title="Animation"
+                                                                         app:description="Created custom animations for this app. Press the button below for a crazy animation. PS: Press the back button to make it stop."
+                                                                         app:callToAction="Demo animation"
+                                                                         app:buttonType="animation"
+                                                                         android:id="@+id/animation_card_view"
+        />
     </LinearLayout>
-
 </ScrollView>

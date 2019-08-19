@@ -4,5 +4,6 @@
         <attr name="title" format="string"/>
         <attr name="description" format="string"/>
         <attr name="callToAction" format="string"/>
+        <attr name="buttonType" format="string"/>
     </declare-styleable>
 </resources>
