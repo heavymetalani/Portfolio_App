@@ -28,23 +28,25 @@ class WorkProjectViewHolder(view : View) : RecyclerView.ViewHolder(view) {
     private val detailsTextView: TextView = view.findViewById(R.id.work_details_text_view)
 
     fun bind(ListableObject: ListableItem) {
-        if(ListableObject is WorkDataObject){
-            titleTextView.text = ListableObject.title
-            subtitleTextView.text = ListableObject.employer
-            dateTextView.text = ListableObject.date
-            detailsTextView.text = ListableObject.details
-        }
-        else if(ListableObject is ProjectDataObject){
-            titleTextView.text = ListableObject.title
-            subtitleTextView.text = ListableObject.university
-            dateTextView.text = ListableObject.date
-            detailsTextView.text = ListableObject.details
-        }
-        else if(ListableObject is EducationDataObject){
-            titleTextView.text = ListableObject.university
-            subtitleTextView.text = ListableObject.location
-            dateTextView.text = ListableObject.date
-            detailsTextView.text = ListableObject.otherDetails
+        when (ListableObject) {
+            is WorkDataObject -> {
+                titleTextView.text = ListableObject.title
+                subtitleTextView.text = ListableObject.employer
+                dateTextView.text = ListableObject.date
+                detailsTextView.text = ListableObject.details
+            }
+            is ProjectDataObject -> {
+                titleTextView.text = ListableObject.title
+                subtitleTextView.text = ListableObject.university
+                dateTextView.text = ListableObject.date
+                detailsTextView.text = ListableObject.details
+            }
+            is EducationDataObject -> {
+                titleTextView.text = ListableObject.university
+                subtitleTextView.text = ListableObject.location
+                dateTextView.text = ListableObject.date
+                detailsTextView.text = ListableObject.otherDetails
+            }
         }
     }
 }
