@@ -1,6 +1,7 @@
 package com.aniruddhapimple.portfolio
 
 import android.content.Intent
+import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -30,7 +31,14 @@ class MainActivity : AppCompatActivity()  {
     }
 
     fun onWebLinkClick(view : View){
-
+        var url : String = ""
+        when {
+            view.id == R.id.linkedin_link_text_view -> url = resources.getString(R.string.linkedin_link)
+            view.id == R.id.github_link_text_view -> url = resources.getString(R.string.github_link)
+            view.id == R.id.youtube_link_text_view -> url = resources.getString(R.string.youtube_link)
+        }
+        val intent = Intent(Intent.ACTION_VIEW, Uri.parse(url))
+        startActivity(intent)
     }
 
     fun onAboutAppClick(view : View){
@@ -45,6 +53,17 @@ class MainActivity : AppCompatActivity()  {
 
     fun onActivitiesClick(view: View){
         val intent = Intent(this, ActivitiesActivity::class.java)
+        startActivity(intent)
+    }
+
+    fun onEmailClick(view: View){
+        val intent = Intent(Intent.ACTION_SENDTO, Uri.fromParts(
+            "mailto",resources.getString(R.string.email_link), null))
+        startActivity(Intent.createChooser(intent, "Send email..."))
+    }
+
+    fun onPhoneNumberClick(view: View){
+        val intent = Intent(Intent.ACTION_DIAL, Uri.fromParts("tel", resources.getString(R.string.phone_number), null))
         startActivity(intent)
     }
 }

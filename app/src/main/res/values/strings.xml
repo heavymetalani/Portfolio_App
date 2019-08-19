@@ -1,4 +1,9 @@
 <resources>
     <string name="app_name">Aniruddha Pimple Portfolio</string>
     <string name="activities_details">• Ex-member of Mumbai University Student Council as a Digital Creative Head \n• Co-founder and treasurer of a registered non-profit organization called Pimple Aanand Dham \n• YouTube channel to upload musical content. Click on the button below to watch a video</string>
+    <string name="linkedin_link">https://www.linkedin.com/in/aniruddhapimple/</string>
+    <string name="github_link">https://github.com/heavymetalani</string>
+    <string name="youtube_link">https://www.youtube.com/channel/UCnoKdoZsX3wNptzg3ccPyRw</string>
+    <string name="email_link">aniruddhapimple1996@gmail.com</string>
+    <string name="phone_number">+15512636720</string>
 </resources>

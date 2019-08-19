@@ -212,6 +212,7 @@
             <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
                       android:textColor="@color/gray_95" android:text="+1 551-263-6720"
                       android:fontFamily="@font/now_regular"
+                      android:onClick="onPhoneNumberClick"
                       android:textSize="@dimen/ds_font_size_body"
                       android:paddingHorizontal="@dimen/spacing_default"
                       android:paddingVertical="@dimen/spacing_tight"/>
@@ -225,6 +226,7 @@
             <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
                       android:textColor="@color/gray_95" android:text="aniruddhapimple1996@gmail.com"
                       android:fontFamily="@font/now_regular"
+                      android:onClick="onEmailClick"
                       android:textSize="@dimen/ds_font_size_body"
                       android:paddingHorizontal="@dimen/spacing_default"
                       android:paddingVertical="@dimen/spacing_tight"/>
