@@ -1,7 +1,6 @@
 package com.aniruddhapimple.portfolio
 
 import android.os.Bundle
-import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import kotlinx.android.synthetic.main.work_project_education_activity.*
@@ -14,7 +13,7 @@ class WorkProjectEducationActivity : AppCompatActivity() {
         val activityTitle = intent.getStringExtra("activity_title")
         work_project_activity_title.text = activityTitle
         work_ex_recycler_view.layoutManager = LinearLayoutManager(this)
-        work_ex_recycler_view.adapter = WorkProjectAdapter(retrieveList(activityTitle))
+        work_ex_recycler_view.adapter = WorkProjectEducationAdapter(retrieveList(activityTitle))
 
         back_button_wpe_activity.setOnClickListener{finish()}
     }

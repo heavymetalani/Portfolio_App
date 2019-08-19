@@ -6,7 +6,7 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 
-class WorkProjectAdapter(private var listableObjectList : ArrayList<ListableItem>) : RecyclerView.Adapter<WorkProjectViewHolder>() {
+class WorkProjectEducationAdapter(private var listableObjectList : ArrayList<ListableItem>) : RecyclerView.Adapter<WorkProjectViewHolder>() {
     override fun getItemCount(): Int {
         return listableObjectList.size
     }

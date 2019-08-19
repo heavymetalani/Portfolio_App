@@ -10,6 +10,8 @@ class SkillsActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.skills_activity)
+        back_button_skills_activity.setOnClickListener{finish()}
+
         skills_recycler_view.layoutManager = LinearLayoutManager(this)
         skills_recycler_view.adapter = SkillsAdapter(retrieveList())
     }
