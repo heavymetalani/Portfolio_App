@@ -23,6 +23,7 @@
         </activity>
         <activity android:name=".WorkProjectEducationActivity"/>
         <activity android:name=".AboutAppActivity"/>
+        <activity android:name=".SkillsActivity"/>
     </application>
 
 </manifest>

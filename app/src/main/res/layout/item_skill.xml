@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+    <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/skill_text_view"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/now_medium"
+            android:textSize="@dimen/ds_font_size_section_header"
+            android:paddingLeft="@dimen/spacing_loose"
+            android:layout_centerVertical="true"
+            android:text="Kotlin"/>
+    <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  android:orientation="vertical"
+                  android:layout_alignParentRight="true"
+                  android:paddingRight="@dimen/spacing_loose"
+                  android:id="@+id/linear_layout_skill_item">
+        <ProgressBar
+                android:id="@+id/progress_bar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minHeight="50dp"
+                android:minWidth="250dp"
+                android:max="100"
+                android:progress="70"
+                android:progressTint="@color/blue_90"
+                android:progressBackgroundTint="@color/gray_100"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  android:text="percentage"
+                  android:id="@+id/progress_text_view"
+                  android:fontFamily="@font/now_regular"
+                  android:textSize="@dimen/ds_font_size_body"/>
+    </LinearLayout>
+</RelativeLayout>

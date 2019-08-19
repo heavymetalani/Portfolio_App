@@ -37,4 +37,13 @@ class MainActivity : AppCompatActivity()  {
         val intent = Intent(this, AboutAppActivity::class.java)
         startActivity(intent)
     }
+
+    fun onSkillsClick(view : View){
+        val intent = Intent(this, SkillsActivity::class.java)
+        startActivity(intent)
+    }
+
+    fun onActivitiesClick(view: View){
+
+    }
 }

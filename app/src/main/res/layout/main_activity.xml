@@ -101,11 +101,12 @@
                     <View android:layout_width="match_parent" android:layout_height="1dp" android:background="@color/gray_50" android:layout_marginHorizontal="@dimen/spacing_tight"/>
 
                     <RelativeLayout android:layout_width="match_parent"
-                                    android:layout_height="wrap_content">
+                                    android:layout_height="wrap_content"
+                    android:onClick="onSkillsClick">
                         <com.aniruddhapimple.design_system.components.typography.SectionHeaderTextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Skills and Activities"
+                                android:text="Skills"
                                 android:id="@+id/link_table_skills_textview"/>
                         <ImageView
                                 android:id="@+id/link_table_skills_imageview"
@@ -140,14 +141,33 @@
 
                     <RelativeLayout android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
+                                    android:onClick="onActivitiesClick">
+                        <com.aniruddhapimple.design_system.components.typography.SectionHeaderTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Activities &amp; other Experience"
+                                android:id="@+id/link_table_activities_other_ex_textview"/>
+                        <ImageView
+                                android:id="@+id/link_table_activities_other_ex_imageview"
+                                android:layout_width="50dp"
+                                android:layout_height="40dp"
+                                android:layout_centerInParent="true"
+                                android:layout_alignParentRight="true"
+                                android:src="@drawable/ic_chevron_right_black_24dp"/>
+                    </RelativeLayout>
+
+                    <View android:layout_width="match_parent" android:layout_height="1dp" android:background="@color/gray_50" android:layout_marginHorizontal="@dimen/spacing_tight"/>
+
+                    <RelativeLayout android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
                     android:onClick="onAboutAppClick">
                         <com.aniruddhapimple.design_system.components.typography.SectionHeaderTextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="About this app"
-                                android:id="@+id/link_table_activities_textview"/>
+                                android:id="@+id/link_table_about_app_textview"/>
                         <ImageView
-                                android:id="@+id/link_table_activities_imageview"
+                                android:id="@+id/link_table_about_app_imageview"
                                 android:layout_width="50dp"
                                 android:layout_height="40dp"
                                 android:layout_centerInParent="true"
