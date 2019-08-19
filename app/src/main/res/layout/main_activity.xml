@@ -20,7 +20,7 @@
                        android:textSize="@dimen/ds_font_size_page_header"
                        android:layout_width="match_parent"
                        android:layout_height="wrap_content"
-                       android:text="Hi, I am Aniruddha"
+                       android:text="@string/hi_i_am_aniruddha"
                        android:textColor="@color/gray_95"
                        android:gravity="center"/>
 
@@ -41,7 +41,7 @@
                     android:paddingBottom="@dimen/spacing_tight"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="What I do:"
+                    android:text="@string/what_i_do"
                     android:textColor="@color/gray_95"
             />
             <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
@@ -49,7 +49,7 @@
             android:fontFamily="@font/now_regular"
             android:textSize="@dimen/ds_font_size_body"
                       android:textColor="@color/gray_95"
-            android:text="Develop aesthetically pleasing and efficient Android Applications."
+            android:text="@string/develop_aesthetically_pleasing_and_efficient_android_applications"
             android:layout_marginBottom="@dimen/spacing_default"/>
 
             <com.aniruddhapimple.design_system.components.containers.ElevatedCardContainer
@@ -66,16 +66,15 @@
                             <com.aniruddhapimple.design_system.components.typography.SectionHeaderTextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:text="Work Experience"
+                                    android:text="@string/work_experience"
                             android:id="@+id/link_table_we_textview"/>
                             <ImageView
                                     android:id="@+id/link_table_we_imageview"
                                     android:layout_width="50dp"
                                     android:layout_height="40dp"
                                     android:layout_centerInParent="true"
-                                    android:layout_alignParentRight="true"
-                                    android:src="@drawable/ic_chevron_right_black_24dp"
-                                    android:gravity="right|end"/>
+                                    android:layout_alignParentEnd="true"
+                                    android:src="@drawable/ic_chevron_right_black_24dp"/>
                         </RelativeLayout>
 
                         <View android:layout_width="match_parent" android:layout_height="1dp" android:background="@color/gray_50" android:layout_marginHorizontal="@dimen/spacing_tight"/>
@@ -86,16 +85,15 @@
                         <com.aniruddhapimple.design_system.components.typography.SectionHeaderTextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Projects"
+                                android:text="@string/projects"
                                 android:id="@+id/link_table_projects_textview"/>
                         <ImageView
                                 android:id="@+id/link_table_projects_imageview"
                                 android:layout_width="50dp"
                                 android:layout_height="40dp"
                                 android:layout_centerInParent="true"
-                                android:layout_alignParentRight="true"
-                                android:src="@drawable/ic_chevron_right_black_24dp"
-                                android:gravity="right|end"/>
+                                android:layout_alignParentEnd="true"
+                                android:src="@drawable/ic_chevron_right_black_24dp"/>
                     </RelativeLayout>
 
                     <View android:layout_width="match_parent" android:layout_height="1dp" android:background="@color/gray_50" android:layout_marginHorizontal="@dimen/spacing_tight"/>
@@ -106,16 +104,15 @@
                         <com.aniruddhapimple.design_system.components.typography.SectionHeaderTextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Skills"
+                                android:text="@string/skills"
                                 android:id="@+id/link_table_skills_textview"/>
                         <ImageView
                                 android:id="@+id/link_table_skills_imageview"
                                 android:layout_width="50dp"
                                 android:layout_height="40dp"
                                 android:layout_centerInParent="true"
-                                android:layout_alignParentRight="true"
-                                android:src="@drawable/ic_chevron_right_black_24dp"
-                                android:gravity="right|end"/>
+                                android:layout_alignParentEnd="true"
+                                android:src="@drawable/ic_chevron_right_black_24dp"/>
                     </RelativeLayout>
 
                     <View android:layout_width="match_parent" android:layout_height="1dp" android:background="@color/gray_50" android:layout_marginHorizontal="@dimen/spacing_tight"/>
@@ -126,14 +123,14 @@
                         <com.aniruddhapimple.design_system.components.typography.SectionHeaderTextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Education"
+                                android:text="@string/education"
                                 android:id="@+id/link_table_education_textview"/>
                         <ImageView
                                 android:id="@+id/link_table_education_imageview"
                                 android:layout_width="50dp"
                                 android:layout_height="40dp"
                                 android:layout_centerInParent="true"
-                                android:layout_alignParentRight="true"
+                                android:layout_alignParentEnd="true"
                                 android:src="@drawable/ic_chevron_right_black_24dp"/>
                     </RelativeLayout>
 
@@ -145,14 +142,14 @@
                         <com.aniruddhapimple.design_system.components.typography.SectionHeaderTextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Activities &amp; other Experience"
+                                android:text="@string/activities_amp_other_experience"
                                 android:id="@+id/link_table_activities_other_ex_textview"/>
                         <ImageView
                                 android:id="@+id/link_table_activities_other_ex_imageview"
                                 android:layout_width="50dp"
                                 android:layout_height="40dp"
                                 android:layout_centerInParent="true"
-                                android:layout_alignParentRight="true"
+                                android:layout_alignParentEnd="true"
                                 android:src="@drawable/ic_chevron_right_black_24dp"/>
                     </RelativeLayout>
 
@@ -164,16 +161,15 @@
                         <com.aniruddhapimple.design_system.components.typography.SectionHeaderTextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="About this app"
+                                android:text="@string/about_this_app"
                                 android:id="@+id/link_table_about_app_textview"/>
                         <ImageView
                                 android:id="@+id/link_table_about_app_imageview"
                                 android:layout_width="50dp"
                                 android:layout_height="40dp"
                                 android:layout_centerInParent="true"
-                                android:layout_alignParentRight="true"
-                                android:src="@drawable/ic_chevron_right_black_24dp"
-                                android:gravity="right|end"/>
+                                android:layout_alignParentEnd="true"
+                                android:src="@drawable/ic_chevron_right_black_24dp"/>
                     </RelativeLayout>
 
                 </LinearLayout>
@@ -183,7 +179,7 @@
             <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="About me"
+                    android:text="@string/about_me"
                     android:textSize="@dimen/ds_font_size_page_header"
                     android:gravity="center"
                     android:paddingHorizontal="@dimen/spacing_default"
@@ -191,26 +187,28 @@
                     android:fontFamily="@font/now_bold"
                     android:textColor="@color/gray_95"/>
                 <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
-                android:textColor="@color/gray_95" android:text="Address:"
+                android:textColor="@color/gray_95" android:text="@string/address"
                 android:fontFamily="@font/now_medium"
                 android:textSize="@dimen/ds_font_size_section_header"
                 android:paddingTop="@dimen/spacing_tight"
-                android:paddingLeft="@dimen/spacing_default"/>
+                android:paddingStart="@dimen/spacing_default"
+                android:paddingEnd="@dimen/spacing_default"/>
                 <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
-                          android:textColor="@color/gray_95" android:text="19 Lincoln Street, Jersey City, NJ 07307"
+                          android:textColor="@color/gray_95" android:text="@string/_19_lincoln_street_jersey_city_nj_07307"
                           android:fontFamily="@font/now_regular"
                           android:textSize="@dimen/ds_font_size_body"
                           android:paddingHorizontal="@dimen/spacing_default"
                 android:paddingVertical="@dimen/spacing_tight"/>
 
             <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
-                      android:textColor="@color/gray_95" android:text="Phone:"
+                      android:textColor="@color/gray_95" android:text="@string/phone"
                       android:fontFamily="@font/now_medium"
                       android:textSize="@dimen/ds_font_size_section_header"
                       android:paddingTop="@dimen/spacing_tight"
-                      android:paddingLeft="@dimen/spacing_default"/>
+                      android:paddingStart="@dimen/spacing_default"
+                      android:paddingEnd="@dimen/spacing_default"/>
             <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
-                      android:textColor="@color/gray_95" android:text="+1 551-263-6720"
+                      android:textColor="@color/gray_95" android:text="@string/_1_551_263_6720"
                       android:fontFamily="@font/now_regular"
                       android:onClick="onPhoneNumberClick"
                       android:textSize="@dimen/ds_font_size_body"
@@ -218,13 +216,14 @@
                       android:paddingVertical="@dimen/spacing_tight"/>
 
             <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
-                      android:textColor="@color/gray_95" android:text="E-mail:"
+                      android:textColor="@color/gray_95" android:text="@string/e_mail"
                       android:fontFamily="@font/now_medium"
                       android:textSize="@dimen/ds_font_size_section_header"
                       android:paddingTop="@dimen/spacing_tight"
-                      android:paddingLeft="@dimen/spacing_default"/>
+                      android:paddingStart="@dimen/spacing_default"
+                      android:paddingEnd="@dimen/spacing_default"/>
             <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
-                      android:textColor="@color/gray_95" android:text="aniruddhapimple1996@gmail.com"
+                      android:textColor="@color/gray_95" android:text="@string/aniruddhapimple1996_gmail_com"
                       android:fontFamily="@font/now_regular"
                       android:onClick="onEmailClick"
                       android:textSize="@dimen/ds_font_size_body"
@@ -232,13 +231,14 @@
                       android:paddingVertical="@dimen/spacing_tight"/>
 
             <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
-                      android:textColor="@color/gray_95" android:text="LinkedIn"
+                      android:textColor="@color/gray_95" android:text="@string/linkedin"
                       android:fontFamily="@font/now_medium"
                       android:textSize="@dimen/ds_font_size_section_header"
                       android:paddingTop="@dimen/spacing_tight"
-                      android:paddingLeft="@dimen/spacing_default"/>
+                      android:paddingStart="@dimen/spacing_default"
+                      android:paddingEnd="@dimen/spacing_default"/>
             <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
-                      android:textColor="@color/gray_95" android:text="https://www.linkedin.com/in/aniruddhapimple/"
+                      android:textColor="@color/gray_95" android:text="@string/https_www_linkedin_com_in_aniruddhapimple"
                       android:fontFamily="@font/now_regular"
                       android:onClick="onWebLinkClick"
                       android:id="@+id/linkedin_link_text_view"
@@ -247,13 +247,14 @@
                       android:paddingVertical="@dimen/spacing_tight"/>
 
             <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
-                      android:textColor="@color/gray_95" android:text="Github"
+                      android:textColor="@color/gray_95" android:text="@string/github"
                       android:fontFamily="@font/now_medium"
                       android:textSize="@dimen/ds_font_size_section_header"
                       android:paddingTop="@dimen/spacing_tight"
-                      android:paddingLeft="@dimen/spacing_default"/>
+                      android:paddingStart="@dimen/spacing_default"
+                      android:paddingEnd="@dimen/spacing_default"/>
             <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
-                      android:textColor="@color/gray_95" android:text="https://github.com/heavymetalani"
+                      android:textColor="@color/gray_95" android:text="@string/https_github_com_heavymetalani"
                       android:fontFamily="@font/now_regular"
                       android:onClick="onWebLinkClick"
                       android:id="@+id/github_link_text_view"
@@ -262,13 +263,14 @@
                       android:paddingVertical="@dimen/spacing_tight"/>
 
             <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
-                      android:textColor="@color/gray_95" android:text="YouTube"
+                      android:textColor="@color/gray_95" android:text="@string/youtube"
                       android:fontFamily="@font/now_medium"
                       android:textSize="@dimen/ds_font_size_section_header"
                       android:paddingTop="@dimen/spacing_tight"
-                      android:paddingLeft="@dimen/spacing_default"/>
+                      android:paddingStart="@dimen/spacing_default"
+                      android:paddingEnd="@dimen/spacing_default"/>
             <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
-                      android:textColor="@color/gray_95" android:text="https://www.youtube.com/channel/UCnoKdoZsX3wNptzg3ccPyRw"
+                      android:textColor="@color/gray_95" android:text="@string/https_www_youtube_com_channel_ucnokdozsx3wnptzg3ccpyrw"
                       android:fontFamily="@font/now_regular"
                       android:onClick="onWebLinkClick"
                       android:id="@+id/youtube_link_text_view"
@@ -277,7 +279,7 @@
                       android:paddingVertical="@dimen/spacing_tight"/>
             <com.aniruddhapimple.design_system.components.buttons.TertiaryButton android:layout_width="match_parent"
                                                                                  android:layout_height="wrap_content"
-            android:text="RESUME IN PDF"
+            android:text="@string/resume_in_pdf"
             android:background="@color/blue_90" android:gravity="center"
             android:layout_margin="@dimen/spacing_loose"/>
         </LinearLayout>

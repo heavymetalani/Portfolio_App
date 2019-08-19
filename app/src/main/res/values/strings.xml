@@ -6,4 +6,31 @@
     <string name="youtube_link">https://www.youtube.com/channel/UCnoKdoZsX3wNptzg3ccPyRw</string>
     <string name="email_link">aniruddhapimple1996@gmail.com</string>
     <string name="phone_number">+15512636720</string>
+    <string name="hi_i_am_aniruddha">Hi, I am Aniruddha</string>
+    <string name="what_i_do">What I do:</string>
+    <string name="develop_aesthetically_pleasing_and_efficient_android_applications">Develop aesthetically pleasing and
+        efficient Android Applications.
+    </string>
+    <string name="work_experience">Work Experience</string>
+    <string name="projects">Projects</string>
+    <string name="skills">Skills</string>
+    <string name="education">Education</string>
+    <string name="activities_amp_other_experience"><![CDATA[Activities & other Exp]]></string>
+    <string name="about_this_app">About this app</string>
+    <string name="about_me">About me</string>
+    <string name="address">Address:</string>
+    <string name="_19_lincoln_street_jersey_city_nj_07307">19 Lincoln Street, Jersey City, NJ 07307</string>
+    <string name="phone">Phone:</string>
+    <string name="_1_551_263_6720">+1 551-263-6720</string>
+    <string name="e_mail">E-mail:</string>
+    <string name="aniruddhapimple1996_gmail_com">aniruddhapimple1996@gmail.com</string>
+    <string name="linkedin">LinkedIn</string>
+    <string name="https_www_linkedin_com_in_aniruddhapimple">https://www.linkedin.com/in/aniruddhapimple/</string>
+    <string name="github">Github</string>
+    <string name="https_github_com_heavymetalani">https://github.com/heavymetalani</string>
+    <string name="youtube">YouTube</string>
+    <string name="https_www_youtube_com_channel_ucnokdozsx3wnptzg3ccpyrw">
+        https://www.youtube.com/channel/UCnoKdoZsX3wNptzg3ccPyRw
+    </string>
+    <string name="resume_in_pdf">RESUME IN PDF</string>
 </resources>

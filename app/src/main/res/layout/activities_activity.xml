@@ -43,6 +43,7 @@
                   android:id="@+id/activities_details_text_view"/>
 
         <com.aniruddhapimple.design_system.components.buttons.HomeCardButton
+                android:onClick="onVideoDemoClick"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="watch a video now"
