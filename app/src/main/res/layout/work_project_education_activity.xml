@@ -31,7 +31,7 @@
             <ProgressBar android:layout_width="wrap_content" android:layout_height="match_parent"
                          android:layout_centerHorizontal="true"
                          android:id="@+id/circle_progress_wpe_activity"
-                         android:layout_centerVertical="true"/>
+                         android:layout_marginTop="100dp"/>
             <androidx.recyclerview.widget.RecyclerView android:layout_width="match_parent"
                                                        android:layout_height="match_parent"
                                                        android:id="@+id/work_ex_recycler_view"/>

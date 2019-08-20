@@ -75,6 +75,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun onResumeClick(view : View){
-        //Go to resume
+        val intent = Intent(Intent.ACTION_VIEW, Uri.parse("https://drive.google.com/drive/folders/1-T7WsnVXBzvBu96xpJUfcy6dT_3a8-p5?usp=sharing"))
+        startActivity(intent)
     }
 }

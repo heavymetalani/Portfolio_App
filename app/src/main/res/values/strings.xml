@@ -32,6 +32,6 @@
     <string name="https_www_youtube_com_channel_ucnokdozsx3wnptzg3ccpyrw">
         https://www.youtube.com/channel/UCnoKdoZsX3wNptzg3ccPyRw
     </string>
-    <string name="resume_in_pdf">RESUME IN PDF</string>
+    <string name="resume_in_pdf">Link to latest resume</string>
     <string name="about_the_app">About the App</string>
 </resources>
