@@ -34,7 +34,7 @@ class WorkProjectEducationActivity : AppCompatActivity() {
                 val detailsArray = document.get("detailsArray") as ArrayList<String>
                 var details = ""
                 for(line in detailsArray){
-                    details+= "• "
+                    details+= "•"
                     details+=line
                     details+="\n"
                 }

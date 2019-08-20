@@ -7,8 +7,7 @@
                   android:layout_height="match_parent">
         <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content"
                         android:background="@color/gray_100"
-                        android:padding="6dp"
-                        android:layout_marginBottom="@dimen/spacing_default">
+                        android:padding="6dp">
             <ImageView android:layout_width="50dp" android:layout_height="45dp"
                        android:src="@drawable/ic_chevron_left_black_24dp"
                        android:id="@+id/back_button_skills_activity"
@@ -18,9 +17,9 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_toRightOf="@+id/back_button_skills_activity"
-                    android:fontFamily="@font/now_medium"
+                    android:fontFamily="@font/futura_medium"
                     android:paddingTop="6dp"
-                    android:textSize="24sp"
+                    android:textSize="28sp"
                     android:textColor="@color/gray_0"
                     android:background="@color/gray_100"
                     android:text="Skills"

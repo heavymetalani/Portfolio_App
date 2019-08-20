@@ -2,27 +2,27 @@
 <resources>
     <style name="Ds.Typography"/>
     <style name="Ds.Typography.Highlight">
-        <item name="android:fontFamily">@font/now_bold</item>
+        <item name="android:fontFamily">@font/futura_bold</item>
         <item name="android:textSize">@dimen/ds_font_size_highlight</item>
     </style>
 
     <style name="Ds.Typography.PageHeader">
-        <item name="android:fontFamily">@font/now_bold</item>
+        <item name="android:fontFamily">@font/futura_bold</item>
         <item name="android:textSize">@dimen/ds_font_size_page_header</item>
     </style>
 
     <style name="Ds.Typography.SectionHeader">
-        <item name="android:fontFamily">@font/now_medium</item>
+        <item name="android:fontFamily">@font/futura_medium</item>
         <item name="android:textSize">@dimen/ds_font_size_section_header</item>
     </style>
 
     <style name="Ds.Typography.Body">
-        <item name="android:fontFamily">@font/now_regular</item>
+        <item name="android:fontFamily">@font/futura_regular</item>
         <item name="android:textSize">@dimen/ds_font_size_body</item>
     </style>
 
     <style name="Ds.Typography.Button">
-        <item name="android:fontFamily">@font/now_regular</item>
+        <item name="android:fontFamily">@font/futura_regular</item>
         <item name="android:textSize">@dimen/ds_font_size_button</item>
     </style>
 </resources>

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="ds_font_size_highlight">40sp</dimen>
-    <dimen name="ds_font_size_page_header">28sp</dimen>
-    <dimen name="ds_font_size_section_header">21sp</dimen>
-    <dimen name="ds_font_size_body">18sp</dimen>
-    <dimen name="ds_font_size_button">18sp</dimen>
+    <dimen name="ds_font_size_highlight">42sp</dimen>
+    <dimen name="ds_font_size_page_header">32sp</dimen>
+    <dimen name="ds_font_size_section_header">25sp</dimen>
+    <dimen name="ds_font_size_body">22sp</dimen>
+    <dimen name="ds_font_size_button">22sp</dimen>
 </resources>

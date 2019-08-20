@@ -7,7 +7,7 @@
             android:layout_width="wrap_content"
             android:id="@+id/skill_text_view"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/now_medium"
+            android:fontFamily="@font/futura_medium"
             android:textSize="@dimen/ds_font_size_section_header"
             android:paddingLeft="@dimen/spacing_loose"
             android:layout_centerVertical="true"
@@ -31,7 +31,7 @@
         <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
                   android:text="percentage"
                   android:id="@+id/progress_text_view"
-                  android:fontFamily="@font/now_regular"
+                  android:fontFamily="@font/futura_regular"
                   android:textSize="@dimen/ds_font_size_body"/>
     </LinearLayout>
 </RelativeLayout>

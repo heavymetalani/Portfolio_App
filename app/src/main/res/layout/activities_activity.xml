@@ -18,16 +18,16 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_toRightOf="@+id/back_button_activities_activity"
-                    android:fontFamily="@font/now_medium"
+                    android:fontFamily="@font/futura_medium"
                     android:paddingTop="6dp"
-                    android:textSize="24sp"
+                    android:textSize="28sp"
                     android:textColor="@color/gray_0"
                     android:background="@color/gray_100"
                     android:text="Activities &amp; other Exp"
             />
         </RelativeLayout>
         <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
-                  android:fontFamily="@font/now_bold"
+                  android:fontFamily="@font/futura_bold"
                   android:paddingVertical="@dimen/spacing_loose"
                   android:paddingHorizontal="@dimen/spacing_loose"
                   android:textSize="@dimen/ds_font_size_page_header"
@@ -37,7 +37,7 @@
                   android:paddingHorizontal="@dimen/spacing_default"
                   android:paddingBottom="@dimen/spacing_loose"
                   android:text="@string/activities_details"
-                  android:fontFamily="@font/now_regular"
+                  android:fontFamily="@font/futura_regular"
                   android:textColor="@color/gray_100"
                   android:textSize="@dimen/ds_font_size_body"
                   android:id="@+id/activities_details_text_view"/>
@@ -51,7 +51,7 @@
                 android:layout_marginStart="@dimen/spacing_default"
                 android:layout_marginBottom="@dimen/spacing_default"/>
         <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
-                  android:fontFamily="@font/now_bold"
+                  android:fontFamily="@font/futura_bold"
                   android:paddingVertical="@dimen/spacing_loose"
                   android:paddingHorizontal="@dimen/spacing_loose"
                   android:textSize="@dimen/ds_font_size_page_header"
