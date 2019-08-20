@@ -73,4 +73,8 @@ class MainActivity : AppCompatActivity() {
                 "tel", resources.getString(R.string.phone_number), null))
         startActivity(intent)
     }
+
+    fun onResumeClick(view : View){
+        //Go to resume
+    }
 }

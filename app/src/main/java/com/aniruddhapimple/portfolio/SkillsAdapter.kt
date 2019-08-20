@@ -30,6 +30,6 @@ class SkillViewHolder(view : View) : RecyclerView.ViewHolder(view) {
     fun bind(SkillObject: SkillDataObject) {
         skillTextView.text = SkillObject.skill
         progressTextView.text = SkillObject.progress.toString()+"%"
-        progressBar.progress = SkillObject.progress
+        progressBar.progress = SkillObject.progress.toInt()
     }
 }

@@ -281,7 +281,8 @@
                                                                                  android:layout_height="wrap_content"
             android:text="@string/resume_in_pdf"
             android:background="@color/blue_90" android:gravity="center"
-            android:layout_margin="@dimen/spacing_loose"/>
+            android:layout_margin="@dimen/spacing_loose"
+            android:onClick="onResumeClick"/>
         </LinearLayout>
     </ScrollView>
 

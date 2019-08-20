@@ -1,31 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:orientation="vertical"
-              android:layout_width="match_parent"
-              android:layout_height="match_parent">
-    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:background="@color/gray_100"
+                        android:padding="6dp"
+                        android:layout_marginBottom="@dimen/spacing_default">
+            <ImageView android:layout_width="50dp" android:layout_height="45dp"
+                       android:src="@drawable/ic_chevron_left_black_24dp"
+                       android:id="@+id/back_button_skills_activity"
+                       android:layout_centerVertical="true"/>
+            <TextView
+                    android:id="@+id/work_project_activity_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/back_button_skills_activity"
+                    android:fontFamily="@font/now_medium"
+                    android:paddingTop="6dp"
+                    android:textSize="24sp"
+                    android:textColor="@color/gray_0"
                     android:background="@color/gray_100"
-                    android:padding="6dp"
-    android:layout_marginBottom="@dimen/spacing_default">
-        <ImageView android:layout_width="50dp" android:layout_height="45dp"
-                   android:src="@drawable/ic_chevron_left_black_24dp"
-                   android:id="@+id/back_button_skills_activity"
-                   android:layout_centerVertical="true"/>
-        <TextView
-                android:id="@+id/work_project_activity_title"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_toRightOf="@+id/back_button_skills_activity"
-                android:fontFamily="@font/now_medium"
-                android:paddingTop="6dp"
-                android:textSize="24sp"
-                android:textColor="@color/gray_0"
-                android:background="@color/gray_100"
-                android:text="Skills"
-        />
-    </RelativeLayout>
-    <androidx.recyclerview.widget.RecyclerView android:layout_width="match_parent"
-                                               android:layout_height="wrap_content"
-    android:id="@+id/skills_recycler_view"/>
+                    android:text="Skills"
+            />
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/spacing_loose"
+        android:paddingTop="@dimen/spacing_loose">
+            <ProgressBar android:layout_width="wrap_content" android:layout_height="wrap_content"
+                         android:layout_centerHorizontal="true"
+                         android:id="@+id/circle_progress_skills_activity"
+                         android:layout_centerVertical="true"/>
+            <androidx.recyclerview.widget.RecyclerView android:layout_width="match_parent"
+                                                       android:layout_height="wrap_content"
+                                                       android:id="@+id/skills_recycler_view"/>
+        </RelativeLayout>
 
-</LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

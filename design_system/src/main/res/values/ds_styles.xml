@@ -25,6 +25,7 @@
         <item name="colorTypographyLight">@color/gray_50</item>
         <item name="colorTypographyError">@color/red_70</item>
         <item name="colorTypographyInteractiveDefault">@color/purple_65</item>
+        <item name="colorAccent">@color/blue_90</item>
 
         <item name="spacingNone">@dimen/spacing_none</item>
         <item name="spacingTightest">@dimen/spacing_tightest</item>

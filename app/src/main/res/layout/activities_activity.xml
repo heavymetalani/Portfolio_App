@@ -57,8 +57,14 @@
                   android:textSize="@dimen/ds_font_size_page_header"
                   android:textColor="@color/gray_100"
                   android:text="Other Experience"/>
-        <androidx.recyclerview.widget.RecyclerView android:layout_width="match_parent"
-                                                   android:layout_height="match_parent"
-                                                   android:id="@+id/other_exp_recycler_view"/>
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ProgressBar android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_centerVertical="true" android:layout_centerHorizontal="true"
+            android:id="@+id/circle_progress_activities_activity"/>
+            <androidx.recyclerview.widget.RecyclerView android:layout_width="match_parent"
+                                                       android:layout_height="match_parent"
+                                                       android:id="@+id/other_exp_recycler_view"/>
+        </RelativeLayout>
+
     </LinearLayout>
 </ScrollView>
