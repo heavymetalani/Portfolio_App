@@ -282,7 +282,7 @@
             android:text="@string/resume_in_pdf"
             android:background="@color/blue_90" android:gravity="center"
             android:layout_margin="@dimen/spacing_loose"
-            android:onClick="onResumeClick"/>
+                    android:id="@+id/resume_in_pdf_button"/>
         </LinearLayout>
     </ScrollView>
 

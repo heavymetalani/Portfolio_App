@@ -13,6 +13,7 @@ class SkillsActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.skills_activity)
+        skills_recycler_view.isNestedScrollingEnabled = false
         back_button_skills_activity.setOnClickListener{finish()}
 
         updateSkillsUI()

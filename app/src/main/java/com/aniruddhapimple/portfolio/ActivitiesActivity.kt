@@ -16,7 +16,16 @@ class ActivitiesActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activities_activity)
         back_button_activities_activity.setOnClickListener{finish()}
+        other_exp_recycler_view.isNestedScrollingEnabled = false
 
+        video_demo_button.setOnClickListener{
+            val intent = Intent(
+                Intent.ACTION_VIEW,
+                Uri.parse("https://youtu.be/Ke3PyAUkZFE")
+            )
+            intent.putExtra("force_fullscreen", true)
+            startActivity(intent)
+        }
         updateActivitiesUI()
 
     }
@@ -43,14 +52,5 @@ class ActivitiesActivity : AppCompatActivity() {
         }.addOnFailureListener{e->
             Toast.makeText(this, "Error occurred while querying: $e", Toast.LENGTH_LONG).show()
         }
-    }
-
-    fun onVideoDemoClick(view : View){
-        val intent = Intent(
-            Intent.ACTION_VIEW,
-            Uri.parse("https://youtu.be/Ke3PyAUkZFE")
-        )
-        intent.putExtra("force_fullscreen", true)
-        startActivity(intent)
     }
 }

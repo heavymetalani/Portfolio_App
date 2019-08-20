@@ -15,6 +15,7 @@ class WorkProjectEducationActivity : AppCompatActivity() {
         setContentView(R.layout.work_project_education_activity)
         val activityTitle = intent.getStringExtra("activity_title")
         work_project_activity_title.text = activityTitle
+        work_ex_recycler_view.isNestedScrollingEnabled = false
         updateWPEUI(activityTitle)
         back_button_wpe_activity.setOnClickListener{finish()}
     }

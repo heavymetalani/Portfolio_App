@@ -4,7 +4,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
     <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="150dp"
             android:id="@+id/skill_text_view"
             android:layout_height="wrap_content"
             android:fontFamily="@font/futura_medium"
@@ -12,18 +12,18 @@
             android:paddingLeft="@dimen/spacing_loose"
             android:layout_centerVertical="true"
             android:text="Kotlin"/>
-    <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
                   android:orientation="vertical"
-                  android:layout_alignParentRight="true"
+            android:layout_toRightOf="@+id/skill_text_view"
+                  android:layout_alignParentEnd="true"
                   android:paddingRight="@dimen/spacing_loose"
                   android:id="@+id/linear_layout_skill_item">
         <ProgressBar
                 android:id="@+id/progress_bar"
                 style="?android:attr/progressBarStyleHorizontal"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:minHeight="50dp"
-                android:minWidth="250dp"
+                android:minHeight="40dp"
                 android:max="100"
                 android:progress="70"
                 android:progressTint="@color/blue_90"

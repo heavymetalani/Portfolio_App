@@ -20,6 +20,11 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.main_activity)
 
         Picasso.get().load(dpUrl).into(home_screen_picture)
+
+        resume_in_pdf_button.setOnClickListener{
+            val intent = Intent(Intent.ACTION_VIEW, Uri.parse("https://drive.google.com/drive/folders/1-T7WsnVXBzvBu96xpJUfcy6dT_3a8-p5?usp=sharing"))
+            startActivity(intent)
+        }
     }
 
     fun onWorkExProjectsClick(view: View) {
@@ -74,8 +79,4 @@ class MainActivity : AppCompatActivity() {
         startActivity(intent)
     }
 
-    fun onResumeClick(view : View){
-        val intent = Intent(Intent.ACTION_VIEW, Uri.parse("https://drive.google.com/drive/folders/1-T7WsnVXBzvBu96xpJUfcy6dT_3a8-p5?usp=sharing"))
-        startActivity(intent)
-    }
 }
