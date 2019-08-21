@@ -25,6 +25,16 @@
         <activity android:name=".AboutAppActivity"/>
         <activity android:name=".SkillsActivity"/>
         <activity android:name=".ActivitiesActivity"/>
+        <service
+                android:name=".MyFirebaseMessagingService"
+                android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <meta-data
+                android:name="com.google.firebase.messaging.default_notification_color"
+                android:resource="@color/blue_90" />
     </application>
 
 </manifest>
