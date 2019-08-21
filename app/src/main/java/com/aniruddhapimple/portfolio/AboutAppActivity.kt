@@ -17,7 +17,7 @@ import kotlinx.android.synthetic.main.about_app_activity.*
 import android.app.NotificationChannel
 import android.graphics.Color
 import android.os.Build
-
+import android.widget.Toast
 
 
 class AboutAppActivity : AppCompatActivity(){
@@ -42,37 +42,42 @@ class AboutAppActivity : AppCompatActivity(){
     }
 
     fun notify(context: Context, notificationTitle: String, notificationMessage: String) {
+        if(packageManager.isInstantApp){
+            Toast.makeText(this,"Notifications don't work on instant apps. Install app from play store to see this functionality.",Toast.LENGTH_LONG).show()
+        }
+        else{
+            val notificationManager : NotificationManager = getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager
 
-        val notificationManager : NotificationManager = getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+                val notificationChannel =
+                    NotificationChannel("my_channel_id", "My Notifications", NotificationManager.IMPORTANCE_HIGH)
+                notificationChannel.description = "Channel description"
+                notificationChannel.enableLights(true)
+                notificationChannel.lightColor = Color.RED
+                notificationChannel.vibrationPattern = longArrayOf(0, 1000, 500, 1000)
+                notificationChannel.enableVibration(true)
+                notificationManager.createNotificationChannel(notificationChannel)
+            }
 
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
-            val notificationChannel =
-                NotificationChannel("my_channel_id", "My Notifications", NotificationManager.IMPORTANCE_HIGH)
-            notificationChannel.description = "Channel description"
-            notificationChannel.enableLights(true)
-            notificationChannel.lightColor = Color.RED
-            notificationChannel.vibrationPattern = longArrayOf(0, 1000, 500, 1000)
-            notificationChannel.enableVibration(true)
-            notificationManager.createNotificationChannel(notificationChannel)
+            val intent = Intent(context, AboutAppActivity::class.java)
+            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP)
+            val pendingIntent = PendingIntent.getActivity(
+                context, 0,
+                intent, PendingIntent.FLAG_ONE_SHOT
+            )
+            val defaultSoundUri = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION)
+            val notificationBuilder = NotificationCompat.Builder(context, "my_channel_id")
+                .setSmallIcon(R.mipmap.ic_launcher)
+                .setDefaults(Notification.DEFAULT_ALL)
+                .setContentInfo("Info")
+                .setContentTitle(notificationTitle)
+                .setContentText(notificationMessage)
+                .setAutoCancel(true)
+                .setSound(defaultSoundUri)
+                .setContentIntent(pendingIntent)
+
+            notificationManager.notify(1, notificationBuilder.build())
         }
 
-        val intent = Intent(context, AboutAppActivity::class.java)
-        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP)
-        val pendingIntent = PendingIntent.getActivity(
-            context, 0,
-            intent, PendingIntent.FLAG_ONE_SHOT
-        )
-        val defaultSoundUri = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION)
-        val notificationBuilder = NotificationCompat.Builder(context, "my_channel_id")
-            .setSmallIcon(R.mipmap.ic_launcher)
-            .setDefaults(Notification.DEFAULT_ALL)
-            .setContentInfo("Info")
-            .setContentTitle(notificationTitle)
-            .setContentText(notificationMessage)
-            .setAutoCancel(true)
-            .setSound(defaultSoundUri)
-            .setContentIntent(pendingIntent)
-
-        notificationManager.notify(1, notificationBuilder.build())
     }
 }
