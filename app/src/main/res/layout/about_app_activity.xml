@@ -39,7 +39,7 @@
                 android:layout_height="wrap_content"
                 app:title="Notifications"
                 app:description="Using Firebase Cloud Messaging this app is capable of sending notifications."
-                app:callToAction="Press this to get a notification"
+                app:callToAction="See a notification"
                 app:buttonType="notification"/>
         <com.aniruddhapimple.design_system.components.cards.HomeCardView
                 android:layout_width="match_parent"
